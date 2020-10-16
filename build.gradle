@@ -26,10 +26,6 @@ allprojects {
         maven { url 'https://jitpack.io' }
         maven { url 'https://dl.bintray.com/chonrp27512/maven'}
     }
-    tasks.withType(Javadoc) {
-        options.addStringOption('Xdoclint:none', '-quiet')
-        options.addStringOption('encoding', 'UTF-8')
-    }
 }
 
 task clean(type: Delete) {

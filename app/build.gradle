@@ -44,6 +44,6 @@ kapt {
 
 dependencies {
 
-   // implementation project(path: ':common')
+    implementation 'com.chonrp27512.maven:zujianhuademo_common:1.0.0'
 
 }
