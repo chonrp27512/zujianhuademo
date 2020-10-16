@@ -1,3 +1,4 @@
 rootProject.name = "zujianhuademo"
+include ':export_mine'
 include ':common'
 include ':app'
