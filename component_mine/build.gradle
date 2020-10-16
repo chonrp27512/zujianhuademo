@@ -48,7 +48,6 @@ kapt {
 dependencies {
 
     implementation project(path: ':common')
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
 
     kapt 'com.alibaba:arouter-compiler:1.2.2'
