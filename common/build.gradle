@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+//apply plugin: 'org.jetbrains.dokka'
 
 android {
     compileSdkVersion 29
@@ -34,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 kapt {
@@ -64,3 +69,40 @@ dependencies {
     api 'com.alibaba:arouter-api:1.5.0'
 
 }
+
+
+ext {
+    bintrayRepo = 'maven' //仓库名
+    bintrayName = 'zujianhuademo_common' //包名
+
+    publishedGroupId = 'com.chonrp27512.maven'
+    libraryName = 'zujianhuademo_common'
+    artifact = 'zujianhuademo_common'
+
+    libraryDescription = 'zujianhuademo_common'
+
+    siteUrl = 'https://github.com/chonrp27512/zujianhuademo'
+    gitUrl = 'https://github.com/chonrp27512/zujianhuademo.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'chonrp27512'
+    developerName = 'regan chon'
+    developerEmail = 'chonrp27512@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+
+apply from: 'install_v2.gradle'
+apply from: 'bintray_v2.gradle'
+
+
+
+//   ./gradlew clean
+//   ./gradlew install
+//   ./gradlew bintrayUpload
+//之后上传倒jcenter，在右下角，点击add to jcenter，再send，等个1个小时左右，审核通过，项目就成功上传了。
