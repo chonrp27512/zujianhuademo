@@ -10,7 +10,7 @@ import com.alibaba.android.arouter.facade.callback.NavigationCallback
 import com.alibaba.android.arouter.launcher.ARouter
 import com.example.export_mine.getMineFragment
 
-@Route(path = "/component2/news")
+@Route(path = "/news/home")
 class NewsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,7 @@ class NewsActivity : AppCompatActivity() {
 
         val skip_news: Button = findViewById(R.id.skip)
         skip_news.setOnClickListener {
-            ARouter.getInstance().build("/component1/mine")
+            ARouter.getInstance().build("/export/mine/fragment")
                 .navigation(this, object : NavigationCallback {
                     override fun onFound(postcard: Postcard?) {
                         Log.d("xxx", "onFound：" + postcard.toString())

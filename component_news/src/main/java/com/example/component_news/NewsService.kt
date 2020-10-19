@@ -4,7 +4,7 @@ import android.content.Context
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.export_news.INewsService
 
-@Route(path = "/component2/news/service")
+@Route(path = "/news/service")
 class NewsService : INewsService {
 
     override fun getNewsList(): List<String> {
