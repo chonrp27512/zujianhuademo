@@ -28,7 +28,7 @@ class NewsActivity : AppCompatActivity() {
 
         val skip_news: Button = findViewById(R.id.skip)
         skip_news.setOnClickListener {
-            ARouter.getInstance().build("/mine/fragment")
+            ARouter.getInstance().build("/mine/home")
                 .navigation(this, object : NavigationCallback {
                     override fun onFound(postcard: Postcard?) {
                         Log.d("xxx", "onFound：" + postcard.toString())
