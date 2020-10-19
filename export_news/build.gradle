@@ -66,7 +66,7 @@ ext {
     siteUrl = 'https://github.com/chonrp27512/zujianhuademo'
     gitUrl = 'https://github.com/chonrp27512/zujianhuademo.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
 
     developerId = 'chonrp27512'
     developerName = 'regan chon'
