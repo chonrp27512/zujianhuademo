@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.export_news.getNewsList
 
-@Route(path = "/component1/mine")
+@Route(path = "/mine/home")
 class MineActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

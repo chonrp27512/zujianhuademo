@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.export_mine.IMineService
 
-@Route(path = "/mine/fragment")
+@Route(path = "/mine/service")
 class MineService : IMineService {
     override fun getMineFragment(): Fragment {
         return MineFragment.newInstance()
