@@ -45,8 +45,8 @@ kapt {
 dependencies {
 
     implementation 'com.chonrp27512.maven:zujianhuademo_common:1.0.0'
-    implementation 'com.chonrp27512.maven:zujianhuademo_component_news:1.0.2'
+    implementation 'com.chonrp27512.maven:zujianhuademo_component_news:1.0.3'
     implementation 'com.chonrp27512.maven:zujianhuademo_component_live:1.0.1'
-    implementation 'com.chonrp27512.maven:zujianhuademo_component_mine:1.0.2'
+    implementation 'com.chonrp27512.maven:zujianhuademo_component_mine:1.0.3'
 
 }
