@@ -5,4 +5,4 @@ import com.alibaba.android.arouter.launcher.ARouter
 
 
 fun getMineFragment(): Fragment =
-    ARouter.getInstance().build("/mine/fragment").navigation() as Fragment
+    ARouter.getInstance().build("/export/mine/fragment").navigation() as Fragment
