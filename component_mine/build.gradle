@@ -54,8 +54,8 @@ dependencies {
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 
     implementation 'com.chonrp27512.maven:zujianhuademo_common:1.0.0'
-//    implementation 'com.chonrp27512.maven:zujianhuademo_export_mine:1.0.0'
-//    implementation 'com.chonrp27512.maven:zujianhuademo_export_news:1.0.0'
+    implementation 'com.chonrp27512.maven:zujianhuademo_export_mine:1.0.0'
+    implementation 'com.chonrp27512.maven:zujianhuademo_export_news:1.0.0'
 }
 
 
