@@ -1,8 +1,2 @@
 rootProject.name = "zujianhuademo"
-include ':export_mine'
-include ':export_news'
-include ':common'
 include ':component_mine'
-include ':component_news'
-include ':component_live'
-include ':app'
